@@ -1,0 +1,4 @@
+#!/bin/sh
+exec 2>&1
+sv check xenstored > /dev/null || exit 1
+exec xen-init-dom0 00000000-0000-0000-0000-000000000000

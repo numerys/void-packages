@@ -199,6 +199,7 @@ do_install() {
 	vsv xen
 	vsv xenconsoled
 	vsv xenstored
+	vsv xen-init-dom0
 
 	rm -f ${DESTDIR}/boot/xen-${version%.*}.gz
 }
